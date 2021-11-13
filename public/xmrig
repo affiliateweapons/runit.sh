@@ -1,0 +1,9 @@
+apt-get update -y
+apt-get upgrade -y
+apt-get install git -y
+
+mkdir -p ~/local/bin
+cd ~/local/bin
+wget https://github.com/xmrig/xmrig/releases/download/v6.15.3/xmrig-6.15.3-linux-x64.tar.gz
+tarx xmrig-6.15.3-linux-x64.tar.gz
+rm xmrig-6.15.3-linux-x64.tar.gz
