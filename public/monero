@@ -1,0 +1,11 @@
+apt-get update
+apt-get upgrade
+apt-get install git
+apt-get install proot
+apt-get install cmake
+git clone https://github.com/xmrig/xmrig
+cd xmrig
+mkdir build
+cd build
+cmake -DWITH_HWLOC=OFF ..
+make
