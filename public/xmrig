@@ -1,0 +1,8 @@
+#!/usr/bin/env zsh
+mkdir -p ~/local/bin
+cd ~/local/bin
+wget https://github.com/xmrig/xmrig/releases/download/v6.15.3/xmrig-6.15.3-linux-x64.tar.gz
+ln -s ~/local/bin/xmrig-6.15.3/xmrig /usr/local/bin/xmrig
+tarx xmrig-6.15.3-linux-x64.tar.gz
+rm xmrig-6.15.3-linux-x64.tar.gz
+
