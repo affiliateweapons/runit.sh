@@ -1,0 +1,2 @@
+[[ -z $SSH_CLONE ]] && git clone https://github.com/affiliateweapons/zshai.git \
+|| git clone git@github.com:affiliateweapons/zshai.git
