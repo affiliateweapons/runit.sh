@@ -1,35 +1,35 @@
 # runit.sh
 Install apps from the command line with one liners.
 
-# How to use
+## How to use
 Use the easy to remember commands below.
 
-# Available apps
-## Zsh.Ai
+## Available apps
+### Zsh.Ai
 ```
 bash <(curl -sSv https://runit.sh/zshai)
 ```
-## Portainer
+### Portainer
 ```
 bash <(curl -sSv https://runit.sh/docker)
 ```
-## Portainer
+### Portainer
 ```
 bash <(curl -sSv https://runit.sh/portainer)
 ```
-## Pi-Hole
+### Pi-Hole
 ```
 bash <(curl -sSv https://runit.sh/pihole)
 ````  
-## Brave
+### Brave
 ```
 bash <(curl -sSv https://runit.sh/brave)
 ````  
-## XMRig
+### XMRig
 ```
 bash <(curl -sSv https://runit.sh/xmrig)
 ````  
-# CURL options
+## CURL options
 If you want less verbosity and 1 character less to typeand remember you can use
 ```
 curl -sS
