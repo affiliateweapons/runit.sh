@@ -5,6 +5,10 @@ Install apps from the command line with one liners.
 Use the easy to remember commands below.
 
 # Available apps
+## Zsh.Ai
+```
+bash <(curl -sSv https://runit.sh/zshai)
+```
 ## Portainer
 ```
 bash <(curl -sSv https://runit.sh/docker)
