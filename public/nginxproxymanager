@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+config="$(cat <<EOF
 version: "3"
 services:
   app:
@@ -5,11 +7,22 @@ services:
     restart: unless-stopped
     ports:
       # These ports are in format <host-port>:<container-port>
-      - '80:80' # Public HTTP Port
-      - '443:443' # Public HTTPS Port
-      - '81:81' # Admin Web Port
+      # Public HTTP Port
+      - '80:80' 
+      # Public HTTPS Port
+      - '443:443' 
+      # Admin Web Port
+      - '81:81' 
     environment:
       DB_SQLITE_FILE: "/data/database.sqlite"
     volumes:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
+EOF
+)"
+
+# write config file
+echo $config > docker-compose.yml
+
+# fire up the app
+docker-compose up -d
